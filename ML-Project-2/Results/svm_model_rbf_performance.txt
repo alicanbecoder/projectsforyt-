@@ -1,0 +1,19 @@
+
+    f"SVC(C=5)"
+    En Ýyi C Deðeri: 5
+    Eðitim Seti - Doðruluk: 0.98, Precision: 0.98, Recall: 0.97, F1-Score: 0.98
+    Doðrulama Seti - Doðruluk: 0.97, Precision: 0.97, Recall: 0.97, F1-Score: 0.97
+    Test Seti - Doðruluk: 0.99, Precision: 1.00, Recall: 0.98, F1-Score: 0.99
+    
+    Confusion Matrix - Eðitim Seti:
+    [[118   2]
+ [  3 117]]
+
+    Confusion Matrix - Doðrulama Seti:
+    [[43  1]
+ [ 1 35]]
+
+    Confusion Matrix - Test Seti:
+    [[36  0]
+ [ 1 43]]
+    

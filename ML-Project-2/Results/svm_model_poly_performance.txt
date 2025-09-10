@@ -1,0 +1,19 @@
+
+    f"SVC(C=110, kernel='poly')"
+    En Ýyi C Deðeri: 110
+    Eðitim Seti - Doðruluk: 0.93, Precision: 0.89, Recall: 0.97, F1-Score: 0.93
+    Doðrulama Seti - Doðruluk: 0.90, Precision: 0.85, Recall: 0.94, F1-Score: 0.89
+    Test Seti - Doðruluk: 0.89, Precision: 0.84, Recall: 0.98, F1-Score: 0.91
+    
+    Confusion Matrix - Eðitim Seti:
+    [[105  15]
+ [  3 117]]
+
+    Confusion Matrix - Doðrulama Seti:
+    [[38  6]
+ [ 2 34]]
+
+    Confusion Matrix - Test Seti:
+    [[28  8]
+ [ 1 43]]
+    

@@ -1,0 +1,16 @@
+
+    Eðitim Seti - Doðruluk: 0.48, Precision: 0.00, Recall: 0.00, F1-Score: 0.00
+    Doðrulama Seti - Doðruluk: 0.53, Precision: 0.00, Recall: 0.00, F1-Score: 0.00
+    Test Seti - Doðruluk: 0.44, Precision: 0.00, Recall: 0.00, F1-Score: 0.00
+    Confusion Matrix - Eðitim Seti:
+    [[116   4]
+ [120   0]]
+
+    Confusion Matrix - Doðrulama Seti:
+    [[42  2]
+ [36  0]]
+
+    Confusion Matrix - Test Seti:
+    [[35  1]
+ [44  0]]
+    
