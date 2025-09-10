@@ -1,2 +1,2 @@
 # projectsforyt-
-Yüksek lisans için yapılan proje ve ödevlerin özet kısımları ve raporları
+Yüksek lisans için yapılan proje ve ödevlerin özet kısımları ve raporları bulunmaktadır. İlgili branşlara giderek projeleri görüntüleyebilirsiniz
