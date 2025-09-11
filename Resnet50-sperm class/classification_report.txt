@@ -1,0 +1,24 @@
+                precision    recall  f1-score   support
+
+     AmorfHead       0.45      0.45      0.45       108
+AsymmetricNeck       0.00      0.00      0.00        11
+     CurlyTail       0.81      0.57      0.67        44
+    DoubleHead       0.00      0.00      0.00         2
+    DoubleTail       0.50      0.33      0.40         6
+      LongTail       0.00      0.00      0.00         2
+NarrowAcrosome       0.55      0.56      0.56        62
+        Normal       0.63      0.67      0.65        18
+       PinHead       0.96      1.00      0.98        24
+  PyriformHead       0.31      0.37      0.34        30
+      RounHead       0.20      0.25      0.22         8
+     ShortTail       0.65      0.50      0.57        30
+   TaperedHead       0.42      0.55      0.47        42
+     ThickNeck       0.43      0.25      0.32        60
+      ThinNeck       0.25      0.17      0.20         6
+   TwistedNeck       0.40      0.83      0.54        35
+   TwistedTail       0.61      0.50      0.55        22
+VacuolatedHead       0.43      0.39      0.41        51
+
+      accuracy                           0.49       561
+     macro avg       0.42      0.41      0.41       561
+  weighted avg       0.50      0.49      0.48       561
