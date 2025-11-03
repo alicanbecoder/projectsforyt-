@@ -28,7 +28,7 @@ Bu proje, Türkiye’nin 2015–2025 dönemine ait **turizm istatistiklerini**, 
 - **İTOSAM:** Otel doluluk oranı ve şehir bazlı turizm göstergeleri  
 
 Tüm veriler açık kaynaklı olup, bu proje kapsamında **Python kullanılarak harmanlanmış ve dönüştürülmüştür.**  
-Veri setleri doğrudan CSV veya Excel olarak değil, **otomatik olarak çekilip birleştirilmiştir.**
+Veri setleri doğrudan CSV veya Excel olarak çekilip birleştirilmiştir.**
 
 ## 📊 Görselleştirme
 - Tableau Dashboard: `tourism_dashboard.twbx`
