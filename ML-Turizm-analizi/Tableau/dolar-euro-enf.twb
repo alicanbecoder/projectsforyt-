@@ -1,0 +1,784 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20252.25.0514.2217                               -->
+<workbook original-version='18.1' source-build='2025.2.0 (20252.25.0514.2217)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AnimationOnByDefault />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='EVDS (EVDS (1))' inline='true' name='federated.1b42p2j04kquyq1fsj5u20k2ohhw' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='EVDS (1)' name='excel-direct.0byyg7h10idxz31eumdmd16fo6dg'>
+            <connection class='excel-direct' cleaning='yes' compat='no' dataRefreshTime='' filename='C:/Users/Alican/Desktop/Turizm-data/Euro-dolar-datası/EVDS (1).xlsx' interpretationMode='1' password='' server='' validate='no' />
+          </named-connection>
+          <named-connection caption='Enflasyon' name='excel-direct.0ncd2i002tdo2l14mzux71adwn0i'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='C:/Users/Alican/Desktop/Turizm-data/Euro-dolar-datası/Enflasyon.xlsx' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <relation type='collection'>
+          <relation connection='excel-direct.0byyg7h10idxz31eumdmd16fo6dg' name='EVDS' table='[EVDS$]' type='table'>
+            <columns gridOrigin='A1:C133:no:A1:C133:1' header='yes' lost='0' outcome='1' processed='242'>
+              <column datatype='date' date-parse-format='yyyy-MM' name='Tarih' ordinal='0' />
+              <column datatype='real' name='TP DK USD A YTL' ordinal='1' />
+              <column datatype='real' name='TP DK EUR A YTL' ordinal='2' />
+            </columns>
+          </relation>
+          <relation connection='excel-direct.0ncd2i002tdo2l14mzux71adwn0i' name='Sayfa1' table='[Sayfa1$]' type='table'>
+            <columns gridOrigin='A3:C132:no:A3:C132:0' header='yes' outcome='2'>
+              <column datatype='date' name='Tarih' ordinal='0' />
+              <column datatype='string' name='TÜFE (Aylık % Değişim)' ordinal='1' />
+              <column datatype='string' name='TÜFE (Aylık % Değişim) 1' ordinal='2' />
+            </columns>
+          </relation>
+        </relation>
+        <cols>
+          <map key='[TP DK EUR A YTL]' value='[EVDS].[TP DK EUR A YTL]' />
+          <map key='[TP DK USD A YTL]' value='[EVDS].[TP DK USD A YTL]' />
+          <map key='[Tarih (Sayfa1)]' value='[Sayfa1].[Tarih]' />
+          <map key='[Tarih]' value='[EVDS].[Tarih]' />
+          <map key='[TÜFE (Aylık % Değişim) 1]' value='[Sayfa1].[TÜFE (Aylık % Değişim) 1]' />
+          <map key='[TÜFE (Aylık % Değişim)]' value='[Sayfa1].[TÜFE (Aylık % Değişim)]' />
+        </cols>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[EVDS]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:C133:no:A1:C133:1&quot;</attribute>
+              <attribute datatype='integer' name='lost'>0</attribute>
+              <attribute datatype='integer' name='outcome'>1</attribute>
+              <attribute datatype='integer' name='processed'>242</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Sayfa1]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A3:C132:no:A3:C132:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>2</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Tarih</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[Tarih]</local-name>
+            <parent-name>[EVDS]</parent-name>
+            <remote-alias>Tarih</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LTR_RTR_S2' />
+            <object-id>[EVDS_D866A4D8AA614626B624E722BC523219]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TP DK USD A YTL</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[TP DK USD A YTL]</local-name>
+            <parent-name>[EVDS]</parent-name>
+            <remote-alias>TP DK USD A YTL</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[EVDS_D866A4D8AA614626B624E722BC523219]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TP DK EUR A YTL</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[TP DK EUR A YTL]</local-name>
+            <parent-name>[EVDS]</parent-name>
+            <remote-alias>TP DK EUR A YTL</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[EVDS_D866A4D8AA614626B624E722BC523219]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Tarih</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[Tarih (Sayfa1)]</local-name>
+            <parent-name>[Sayfa1]</parent-name>
+            <remote-alias>Tarih</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;DATE&quot;</attribute>
+            </attributes>
+            <object-id>[Sayfa1_B8F2D6C2DC29477F8812A25ECE531A2E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TÜFE (Aylık % Değişim)</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[TÜFE (Aylık % Değişim)]</local-name>
+            <parent-name>[Sayfa1]</parent-name>
+            <remote-alias>TÜFE (Aylık % Değişim)</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LTR_RTR_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Sayfa1_B8F2D6C2DC29477F8812A25ECE531A2E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TÜFE (Aylık % Değişim) 1</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[TÜFE (Aylık % Değişim) 1]</local-name>
+            <parent-name>[Sayfa1]</parent-name>
+            <remote-alias>TÜFE (Aylık % Değişim) 1</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LTR_RTR_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Sayfa1_B8F2D6C2DC29477F8812A25ECE531A2E]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='avg(euro-kur)' datatype='real' name='[Calculation_1437774182296248320]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='AVG([TP DK EUR A YTL])' />
+      </column>
+      <column caption='AVG-DOLAR-KUR' datatype='real' name='[Calculation_1437774182296428545]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='AVG([TP DK USD A YTL])' />
+      </column>
+      <column caption='Calculation1' datatype='real' name='[Calculation_1437774182302507011]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='SUM([TÜFE (Aylık % Değişim)])' />
+      </column>
+      <column aggregation='Sum' caption='TÜFE' datatype='integer' datatype-customized='true' name='[Calculation_1437774182303334405]' role='dimension' type='quantitative'>
+        <calculation class='tableau' formula='INT([TÜFE (Aylık % Değişim)])' />
+      </column>
+      <column caption='AVG-TÜFE' datatype='real' name='[Calculation_1437774182304354310]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='AVG([Calculation_1437774182303334405])' />
+      </column>
+      <column datatype='real' datatype-customized='true' name='[TP DK EUR A YTL]' role='dimension' type='quantitative' />
+      <column datatype='real' datatype-customized='true' name='[TP DK USD A YTL]' role='dimension' type='quantitative' />
+      <column datatype='date' datatype-customized='true' name='[Tarih]' role='dimension' type='ordinal' />
+      <column aggregation='CountD' datatype='real' datatype-customized='true' name='[TÜFE (Aylık % Değişim) 1]' role='measure' type='quantitative' />
+      <column aggregation='CountD' datatype='real' datatype-customized='true' name='[TÜFE (Aylık % Değişim)]' role='measure' type='quantitative' />
+      <column caption='EVDS' datatype='table' name='[__tableau_internal_object_id__].[EVDS_D866A4D8AA614626B624E722BC523219]' role='measure' type='quantitative' />
+      <column caption='ENFLASYON' datatype='table' name='[__tableau_internal_object_id__].[Sayfa1_B8F2D6C2DC29477F8812A25ECE531A2E]' role='measure' type='quantitative' />
+      <column-instance column='[Calculation_1437774182296248320]' derivation='User' name='[usr:Calculation_1437774182296248320:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Calculation_1437774182296428545]' derivation='User' name='[usr:Calculation_1437774182296428545:qk]' pivot='key' type='quantitative' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/Alican/AppData/Local/Temp/TableauTemp/#TableauTemp_1gkwmtw10sykhv143wegv0dk9eb4.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='10/31/2025 01:15:07 PM' username='tableau_internal_user'>
+          <relation type='collection'>
+            <relation name='EVDS_D866A4D8AA614626B624E722BC523219' table='[Extract].[EVDS_D866A4D8AA614626B624E722BC523219]' type='table' />
+            <relation name='Sayfa1_B8F2D6C2DC29477F8812A25ECE531A2E' table='[Extract].[Sayfa1_B8F2D6C2DC29477F8812A25ECE531A2E]' type='table' />
+          </relation>
+          <cols>
+            <map key='[TP DK EUR A YTL]' value='[EVDS_D866A4D8AA614626B624E722BC523219].[TP DK EUR A YTL]' />
+            <map key='[TP DK USD A YTL]' value='[EVDS_D866A4D8AA614626B624E722BC523219].[TP DK USD A YTL]' />
+            <map key='[Tarih (Sayfa1)]' value='[Sayfa1_B8F2D6C2DC29477F8812A25ECE531A2E].[Tarih]' />
+            <map key='[Tarih]' value='[EVDS_D866A4D8AA614626B624E722BC523219].[Tarih]' />
+            <map key='[TÜFE (Aylık % Değişim) 1]' value='[Sayfa1_B8F2D6C2DC29477F8812A25ECE531A2E].[TÜFE (Aylık % Değişim) 1]' />
+            <map key='[TÜFE (Aylık % Değişim)]' value='[Sayfa1_B8F2D6C2DC29477F8812A25ECE531A2E].[TÜFE (Aylık % Değişim)]' />
+          </cols>
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>Tarih</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[Tarih]</local-name>
+              <parent-name>[EVDS_D866A4D8AA614626B624E722BC523219]</parent-name>
+              <remote-alias>Tarih</remote-alias>
+              <ordinal>0</ordinal>
+              <family>EVDS</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>121</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[EVDS_D866A4D8AA614626B624E722BC523219]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>TP DK USD A YTL</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[TP DK USD A YTL]</local-name>
+              <parent-name>[EVDS_D866A4D8AA614626B624E722BC523219]</parent-name>
+              <remote-alias>TP DK USD A YTL</remote-alias>
+              <ordinal>1</ordinal>
+              <family>EVDS</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>121</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[EVDS_D866A4D8AA614626B624E722BC523219]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>TP DK EUR A YTL</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[TP DK EUR A YTL]</local-name>
+              <parent-name>[EVDS_D866A4D8AA614626B624E722BC523219]</parent-name>
+              <remote-alias>TP DK EUR A YTL</remote-alias>
+              <ordinal>2</ordinal>
+              <family>EVDS</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>121</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[EVDS_D866A4D8AA614626B624E722BC523219]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Tarih</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[Tarih (Sayfa1)]</local-name>
+              <parent-name>[Sayfa1_B8F2D6C2DC29477F8812A25ECE531A2E]</parent-name>
+              <remote-alias>Tarih</remote-alias>
+              <ordinal>3</ordinal>
+              <family>Sayfa1</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>129</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Sayfa1_B8F2D6C2DC29477F8812A25ECE531A2E]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>TÜFE (Aylık % Değişim)</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[TÜFE (Aylık % Değişim)]</local-name>
+              <parent-name>[Sayfa1_B8F2D6C2DC29477F8812A25ECE531A2E]</parent-name>
+              <remote-alias>TÜFE (Aylık % Değişim)</remote-alias>
+              <ordinal>4</ordinal>
+              <family>Sayfa1</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>128</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Sayfa1_B8F2D6C2DC29477F8812A25ECE531A2E]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>TÜFE (Aylık % Değişim) 1</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[TÜFE (Aylık % Değişim) 1]</local-name>
+              <parent-name>[Sayfa1_B8F2D6C2DC29477F8812A25ECE531A2E]</parent-name>
+              <remote-alias>TÜFE (Aylık % Değişim) 1</remote-alias>
+              <ordinal>5</ordinal>
+              <family>Sayfa1</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>113</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Sayfa1_B8F2D6C2DC29477F8812A25ECE531A2E]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[:Measure Names]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.1b42p2j04kquyq1fsj5u20k2ohhw].[usr:Calculation_1437774182296428545:qk]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.1b42p2j04kquyq1fsj5u20k2ohhw]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.1b42p2j04kquyq1fsj5u20k2ohhw].[usr:Calculation_1437774182296248320:qk]&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Turkey&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+      <field-sort-info field-sort-order-type='custom-order'>
+        <field-sort-custom-order field='Tarih' />
+        <field-sort-custom-order field='TP DK USD A YTL' />
+        <field-sort-custom-order field='Calculation_1437774182296428545' />
+        <field-sort-custom-order field='TP DK EUR A YTL' />
+        <field-sort-custom-order field='Calculation_1437774182296248320' />
+        <field-sort-custom-order field='Geometry (generated)' />
+        <field-sort-custom-order field='Latitude (generated)' />
+        <field-sort-custom-order field='Longitude (generated)' />
+        <field-sort-custom-order field=':Measure Names' />
+        <field-sort-custom-order field='Multiple Values' />
+      </field-sort-info>
+      <object-graph>
+        <objects>
+          <object caption='EVDS' id='EVDS_D866A4D8AA614626B624E722BC523219'>
+            <properties context=''>
+              <relation connection='excel-direct.0byyg7h10idxz31eumdmd16fo6dg' name='EVDS' table='[EVDS$]' type='table'>
+                <columns gridOrigin='A1:C133:no:A1:C133:1' header='yes' lost='0' outcome='1' processed='242'>
+                  <column datatype='date' date-parse-format='yyyy-MM' name='Tarih' ordinal='0' />
+                  <column datatype='real' name='TP DK USD A YTL' ordinal='1' />
+                  <column datatype='real' name='TP DK EUR A YTL' ordinal='2' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='EVDS_D866A4D8AA614626B624E722BC523219' table='[Extract].[EVDS_D866A4D8AA614626B624E722BC523219]' type='table' />
+            </properties>
+          </object>
+          <object caption='ENFLASYON' id='Sayfa1_B8F2D6C2DC29477F8812A25ECE531A2E'>
+            <properties context=''>
+              <relation connection='excel-direct.0ncd2i002tdo2l14mzux71adwn0i' name='Sayfa1' table='[Sayfa1$]' type='table'>
+                <columns gridOrigin='A3:C132:no:A3:C132:0' header='yes' outcome='2'>
+                  <column datatype='date' name='Tarih' ordinal='0' />
+                  <column datatype='string' name='TÜFE (Aylık % Değişim)' ordinal='1' />
+                  <column datatype='string' name='TÜFE (Aylık % Değişim) 1' ordinal='2' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Sayfa1_B8F2D6C2DC29477F8812A25ECE531A2E' table='[Extract].[Sayfa1_B8F2D6C2DC29477F8812A25ECE531A2E]' type='table' />
+            </properties>
+          </object>
+        </objects>
+        <relationships>
+          <relationship>
+            <expression op='='>
+              <expression op='[Tarih]' />
+              <expression op='[Tarih (Sayfa1)]' />
+            </expression>
+            <first-end-point object-id='EVDS_D866A4D8AA614626B624E722BC523219' />
+            <second-end-point object-id='Sayfa1_B8F2D6C2DC29477F8812A25ECE531A2E' />
+          </relationship>
+        </relationships>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>DOLAR/EURO KUR DEĞERLERİ YILLAR BAZINDA(2015-2025)
+</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='EVDS (EVDS (1))' name='federated.1b42p2j04kquyq1fsj5u20k2ohhw' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1b42p2j04kquyq1fsj5u20k2ohhw'>
+            <column datatype='real' datatype-customized='true' name='[TP DK EUR A YTL]' role='dimension' type='quantitative' />
+            <column datatype='real' datatype-customized='true' name='[TP DK USD A YTL]' role='dimension' type='quantitative' />
+            <column datatype='date' datatype-customized='true' name='[Tarih]' role='dimension' type='ordinal' />
+            <column-instance column='[TP DK EUR A YTL]' derivation='None' name='[none:TP DK EUR A YTL:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[TP DK USD A YTL]' derivation='None' name='[none:TP DK USD A YTL:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Tarih]' derivation='Month-Trunc' name='[tmn:Tarih:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.1b42p2j04kquyq1fsj5u20k2ohhw].[none:TP DK USD A YTL:qk]' field-type='quantitative' fold='true' max='40.0' min='0.0' range-type='fixed' scope='rows' type='space' />
+            <format attr='title' class='0' field='[federated.1b42p2j04kquyq1fsj5u20k2ohhw].[none:TP DK EUR A YTL:qk]' scope='rows' value='Kur Değeri' />
+            <format attr='title' class='0' field='[federated.1b42p2j04kquyq1fsj5u20k2ohhw].[none:TP DK USD A YTL:qk]' scope='rows' value='' />
+            <format attr='title' class='0' field='[federated.1b42p2j04kquyq1fsj5u20k2ohhw].[tmn:Tarih:qk]' scope='cols' value='Tarih' />
+            <encoding attr='space' class='0' field='[federated.1b42p2j04kquyq1fsj5u20k2ohhw].[none:TP DK EUR A YTL:qk]' field-type='quantitative' max='40.0' min='0.0' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='height-header' value='10' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.1b42p2j04kquyq1fsj5u20k2ohhw].[none:TP DK EUR A YTL:qk]' palette='orange_10_0' type='interpolated' />
+            <encoding attr='color' field='[federated.1b42p2j04kquyq1fsj5u20k2ohhw].[none:TP DK USD A YTL:qk]' palette='green_10_0' type='interpolated' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+          </pane>
+          <pane id='3' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.1b42p2j04kquyq1fsj5u20k2ohhw].[none:TP DK EUR A YTL:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#e15759' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='4' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.1b42p2j04kquyq1fsj5u20k2ohhw].[none:TP DK USD A YTL:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+          </pane>
+        </panes>
+        <rows>([federated.1b42p2j04kquyq1fsj5u20k2ohhw].[none:TP DK EUR A YTL:qk] + [federated.1b42p2j04kquyq1fsj5u20k2ohhw].[none:TP DK USD A YTL:qk])</rows>
+        <cols>[federated.1b42p2j04kquyq1fsj5u20k2ohhw].[tmn:Tarih:qk]</cols>
+      </table>
+      <simple-id uuid='{C9FE9771-078F-4D1C-8480-C1EB678B506F}' />
+    </worksheet>
+    <worksheet name='Sheet 2'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Yıllık ortalama enflasyon oranları
+</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='EVDS (EVDS (1))' name='federated.1b42p2j04kquyq1fsj5u20k2ohhw' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1b42p2j04kquyq1fsj5u20k2ohhw'>
+            <column aggregation='Sum' caption='TÜFE' datatype='integer' datatype-customized='true' name='[Calculation_1437774182303334405]' role='dimension' type='quantitative'>
+              <calculation class='tableau' formula='INT([TÜFE (Aylık % Değişim)])' />
+            </column>
+            <column caption='AVG-TÜFE' datatype='real' name='[Calculation_1437774182304354310]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='AVG([Calculation_1437774182303334405])' />
+            </column>
+            <column datatype='date' name='[Tarih (Sayfa1)]' role='dimension' type='ordinal' />
+            <column aggregation='CountD' datatype='real' datatype-customized='true' name='[TÜFE (Aylık % Değişim)]' role='measure' type='quantitative' />
+            <column-instance column='[Calculation_1437774182304354310]' derivation='User' name='[usr:Calculation_1437774182304354310:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Tarih (Sayfa1)]' derivation='Year' name='[yr:Tarih (Sayfa1):ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+          </pane>
+        </panes>
+        <rows>[federated.1b42p2j04kquyq1fsj5u20k2ohhw].[usr:Calculation_1437774182304354310:qk]</rows>
+        <cols>[federated.1b42p2j04kquyq1fsj5u20k2ohhw].[yr:Tarih (Sayfa1):ok]</cols>
+      </table>
+      <simple-id uuid='{2A0251F8-CB5F-4CCA-A51C-C348714551E8}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='30'>
+    <window class='worksheet' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1b42p2j04kquyq1fsj5u20k2ohhw].[:Measure Names]</field>
+            <field>[federated.1b42p2j04kquyq1fsj5u20k2ohhw].[none:TP DK EUR A YTL:nk]</field>
+            <field>[federated.1b42p2j04kquyq1fsj5u20k2ohhw].[none:TP DK EUR A YTL:ok]</field>
+            <field>[federated.1b42p2j04kquyq1fsj5u20k2ohhw].[none:TP DK EUR A YTL:qk]</field>
+            <field>[federated.1b42p2j04kquyq1fsj5u20k2ohhw].[none:TP DK USD A YTL:nk]</field>
+            <field>[federated.1b42p2j04kquyq1fsj5u20k2ohhw].[none:TP DK USD A YTL:ok]</field>
+            <field>[federated.1b42p2j04kquyq1fsj5u20k2ohhw].[none:TP DK USD A YTL:qk]</field>
+            <field>[federated.1b42p2j04kquyq1fsj5u20k2ohhw].[none:Tarih:nk]</field>
+            <field>[federated.1b42p2j04kquyq1fsj5u20k2ohhw].[qr:Tarih:ok]</field>
+            <field>[federated.1b42p2j04kquyq1fsj5u20k2ohhw].[tmn:Tarih:qk]</field>
+            <field>[federated.1b42p2j04kquyq1fsj5u20k2ohhw].[yr:Tarih:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{6F56C59F-A2D3-4F4D-A1EA-32C5862F2773}' />
+    </window>
+    <window class='worksheet' maximized='true' name='Sheet 2'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1b42p2j04kquyq1fsj5u20k2ohhw].[none:Calculation_1437774182303334405:ok]</field>
+            <field>[federated.1b42p2j04kquyq1fsj5u20k2ohhw].[none:Calculation_1437774182303334405:qk]</field>
+            <field>[federated.1b42p2j04kquyq1fsj5u20k2ohhw].[none:TÜFE (Aylık % Değişim):nk]</field>
+            <field>[federated.1b42p2j04kquyq1fsj5u20k2ohhw].[none:TÜFE (bin):qk]</field>
+            <field>[federated.1b42p2j04kquyq1fsj5u20k2ohhw].[yr:Tarih (Sayfa1):ok]</field>
+            <field>[federated.1b42p2j04kquyq1fsj5u20k2ohhw].[yr:Tarih:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{DD453873-082D-4F8B-8398-079E6B113C7B}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Sheet 1' width='192'>
+      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
+      N4SXAAAAAElFTkSuQmCC
+    </thumbnail>
+    <thumbnail height='192' name='Sheet 2' width='192'>
+      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
+    </thumbnail>
+  </thumbnails>
+</workbook>
