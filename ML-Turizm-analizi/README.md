@@ -31,12 +31,13 @@ Tüm veriler açık kaynaklı olup, bu proje kapsamında **Python kullanılarak 
 Veri setleri doğrudan CSV veya Excel olarak çekilip birleştirilmiştir.**
 
 ## 📊 Görselleştirme
-- Tableau Dashboard: `tourism_dashboard.twbx`
+- Tableau Sheets
 - İçerik:
-  - Yıllık yolcu sayısı değişimi  
-  - Döviz – gelir ilişkisi  
-  - Pandemi etkisi  
-  - 2025 tahmin senaryoları  
+  - Havalanı bazlı dış hat yolcu sayısı
+  - Yıllık yolcu sayısı değişimi
+  - Ülke bazlı analizler
+  - Döviz – gelir ilişkisi
+  - Trend analizi
 
 ## 👨‍💻 Geliştirici
 **Alican Tunç**  
